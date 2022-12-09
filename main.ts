@@ -2,18 +2,18 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     projectile = sprites.createProjectileFromSprite(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
-        . . . . . 7 7 7 7 7 . . . . . . 
-        . . . 7 7 7 9 9 9 d 7 7 7 7 . . 
-        . . 7 d 9 d 9 9 9 d d d 7 7 . . 
-        . . 7 9 9 1 1 1 d d 9 9 9 7 . . 
-        . 7 9 9 9 1 1 1 9 1 1 9 9 7 7 . 
-        . 7 d d 1 1 9 9 9 1 1 9 9 d 7 . 
-        . 7 9 9 1 1 9 1 1 9 9 d d d 7 . 
-        . 6 9 9 9 d 1 1 1 9 1 1 9 9 6 . 
-        . 6 d 9 9 d 1 1 1 9 1 1 9 9 6 . 
-        . . 6 7 d d 9 9 9 9 d d 9 7 . . 
-        . . . 6 6 7 d 9 9 d d 7 7 . . . 
-        . . . . . 6 6 7 7 7 6 6 . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . f f f f f f . . . . . 
+        . . . . . f f f f f f . . . . . 
+        . . . . . f f f f f f . . . . . 
+        . . . . . f f f f f f . . . . . 
+        . . . . . f f f f f f . . . . . 
+        . . . . . f f f f f f . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         `, mySprite, Render.getAttribute(Render.attribute.dirX) * 100, Render.getAttribute(Render.attribute.dirY) * 100)
