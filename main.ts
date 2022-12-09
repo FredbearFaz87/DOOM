@@ -1,3 +1,19 @@
+function SquareWave (Frequency: number, Duration: number) {
+    music.playSoundEffect(music.createSoundEffect(
+    WaveShape.Square,
+    Frequency,
+    Frequency,
+    255,
+    255,
+    Duration,
+    SoundExpressionEffect.None,
+    InterpolationCurve.Linear
+    ), SoundExpressionPlayMode.UntilDone)
+}
+function DoomMusicTest () {
+    SquareWave(3443, 1000)
+    SquareWave(500, 1000)
+}
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     projectile = sprites.createProjectileFromSprite(img`
         . . . . . . . . . . . . . . . . 
@@ -267,3 +283,4 @@ scene.setBackgroundImage(img`
     bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
     `)
 Render.moveWithController(2, 3, 1)
+DoomMusicTest()
