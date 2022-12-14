@@ -600,7 +600,7 @@ Render.setAttribute(Render.attribute.wallZScale, 2)
 StatusBars()
 tiles.placeOnRandomTile(myEnemy, assets.tile`transparency16`)
 tiles.placeOnRandomTile(mySprite, assets.tile`transparency16`)
-game.onUpdateInterval(2000, function () {
+game.onUpdateInterval(7500, function () {
     AmmoSprite = sprites.create(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
